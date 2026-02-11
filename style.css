@@ -7,13 +7,19 @@ body {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   margin-bottom: 30px;
+  color: #3a2c3a;
 }
+
 
 /* GRID LAYOUT */
 .wishlist-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 per row on large screens */
+  grid-template-columns: repeat(5, 1fr); /* 4 per row on large screens */
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
