@@ -5,72 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hailee's Wishlist</title>
 
+  <!-- Google Fonts: Playfair Display for Serifs, Outfit for clean modern UI -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Hailee's Wishlist</h1>
+  <div class="container">
+    <header>
+      <h1>Hailee's Wishlist</h1>
+      <p>Curated Collection</p>
+    </header>
 
-  <div class="wishlist-grid">
-    <a href="https://www.viviennewestwood.com/women/accessories/other-accessories/heart-lighter-silver/8209000IU-C0068--SILVER.html" target="_blank" class="item">
-      <img src="images/vivienne_westwood_lighter.png" alt="vivienne westwood lighter">
-    </a>
+    <div class="tabs-container">
+      <button class="tab-btn active" data-category="all">All</button>
+      <button class="tab-btn" data-category="bags">Bags</button>
+      <button class="tab-btn" data-category="beauty">Beauty</button>
+      <button class="tab-btn" data-category="clothing">Clothing</button>
+      <button class="tab-btn" data-category="shoes">Shoes</button>
+      <button class="tab-btn" data-category="accessories">Accessories</button>
+      <button class="tab-btn" data-category="home">Home</button>
+    </div>
 
-    <a href="https://www.intimissimi.com/us/product/silk_slip_with_lace_insert_detail-LC71S1+++1467S.html?_gl=1*19q5pl*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdAL6tjpOWBFzhotgcF8OgseD99-4jmJmX4nOK2Z0GGmgnlhncQyI6RoC_9wQAvD_BwE&gbraid=0AAAAADtlepP_2xZgO5j8-KLRTDhJFOKLU" target="_blank" class="item">
-      <img src="images/slip_dress.png" alt="intimissimi silk slip">
-    </a>
-
-    <a href="https://www.chloe.com/en-us/p/bags/shoulder-bag/CH25WS802P75602.html" target="_blank" class="item">
-      <img src="images/chloe_paddington_bag.png" alt="chloe paddington bag">
-    </a>
-
-    <a href="https://us.burberry.com/check-cashmere-scarf-p81139471?pla=true&utm_source=google_ads&utm_medium=CPC&utm_channel=psr&utm_campaignid=23921061302&utm_placementid=199781686680&gclsrc=aw.ds&gad_source=1&gad_campaignid=23921061302&gbraid=0AAAAADpt2lNTmIibgGUrpKxfz1dhbxfVJ&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdNWNhvxUSsMfvxK-DfET4oi5y0eL2Q2BWEWIAb7WDcb4JQlUDb5giRoCN1UQAvD_BwE&initials=HNY&threadColor=100004&threadSize=mngofs1900004&fontStyle=upperCase&color=$black$" target="_blank" class="item">
-      <img src="images/pink_burberry_scarf.png" alt="pink burberry scarf">
-    </a>
-    
-    <a href="https://masonpearson.com/product/junior-bristle-nylon-hairbrush-bn2/" target="_blank" class="item">
-      <img src="images/mason_pearson_hairbrush.png" alt="mason pearson hairbrush">
-    </a>
-
-    <a href="https://www.diptyqueparis.com/en_us/p/home-fragrances/scented-candles/colored-scented-candles/roses-candle-600g.html" target="_blank" class="item">
-      <img src="images/diptyque_candle.png" alt="diptyque candle">
-    </a>
-
-    <a href="https://www.ferragamo.com/shop/us/en/women/handbags/totes-1/tote-m-777338" target="_blank" class="item">
-      <img src="images/ferragamo_bag.png" alt="ferragamo bag">
-    </a>
-
-    <a href="https://www.slip.com/collections/queen-pillowcases/products/pillowcase-white-queen-zippered" target="_blank" class="item">
-      <img src="images/slip_pillowcase.png" alt="slip pillowcase">
-    </a>
-
-    <a href="https://www.amazon.com/Cigarette-Victorian-Holder-Regular-Silver/dp/B09N8TYP93?th=1" target="_blank" class="item">
-      <img src="images/cigarette_case.png" alt="cigarette case">
-    </a>
-
-    <a href="https://www.prada.com/us/en/p/chocolate-brushed-leather-loafers/1D246M_ULS_F0002_F_G050.html" target="_blank" class="item">
-      <img src="images/prada_loafers.png" alt="prada loafers">
-    </a>
-
-    <a href="https://us.sandro-paris.com/en/p/oversized-leather-jacket/3607172108335.html?gad_source=1&gad_campaignid=17452296430&gbraid=0AAAAADwBl7HWEv2Ep9t-1-nfqUl_3GY2U&gclid=EAIaIQobChMIw4qRpOTjkgMVg1hHAR2__C9JEAQYAiABEgIbJfD_BwE" target="_blank" class="item">
-      <img src="images/sandro_leather_jacket.png" alt="sandro leather jacket">
-    </a>
-
-    <a href="https://www.diptyqueparis.com/en_us/p/large-photophore-coast.html" target="_blank" class="item">
-      <img src="images/diptyque_candle_holder.png" alt="diptyque candle holder">
-    </a>
-
-    <a href="https://www.toryburch.com/en-us/handbags/tote-bags/romy-tote/163388.html?color=200" target="_blank" class="item">
-      <img src="images/tory_burch_romy_tote.png" alt="tory burch romy tote">
-    </a>
-
-    <a href="https://us.renecaovilla.com/us/en/shoes/sandals/juniper-silver-468051817358015.html?keeplocale=true&Country=US&pid=468051817358015&utm_source=google&utm_medium=cpc&utm_campaign=US_Pmax&utm_id=21345453014&loopcd=COp|c|x|21345453014|468051817358015&gad_source=1&gad_campaignid=21349408318&gbraid=0AAAAACJVh3OX_UgvrRfYTC5R2oCuYnPea&gclid=Cj0KCQiAqeDMBhDcARIsAJEbU9TmQ8B9CBASMpx7i7QxqxKNTKG07hApi6w_Gt6iyue8IfeZPITwBzsaAgxwEALw_wcB" target="_blank" class="item">
-      <img src="images/rene_caovilla_silver_heels.png" alt="rene caovilla silver heels">
-    </a>
-
+    <div class="wishlist-grid" id="wishlist-grid">
+      <!-- Items dynamically populated via script.js -->
+    </div>
   </div>
 </body>
 </html>

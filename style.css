@@ -1,59 +1,265 @@
-body {
-  font-family: Arial, sans-serif;
+/* 
+ * Hailee's Wishlist - Premium Style Sheets
+ * A luxury fashion & lifestyle aesthetic.
+ */
+
+:root {
+  --bg-primary: #FAF7F2;
+  --text-primary: #2C2A29;
+  --text-secondary: #7A7875;
+  --accent-gold: #C5A079;
+  --accent-gold-dark: #A58059;
+  --accent-gold-light: #EADBC8;
+  --card-bg: #FFFFFF;
+  --card-border: #F0EDE8;
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 12px 30px rgba(197, 160, 121, 0.12);
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 20px;
-  background-color: #fdecef; 
-  text-align: center;
+  padding: 0;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 30px;
-  color: #3a2c3a;
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 40px 20px 80px 20px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-
-/* GRID LAYOUT */
-.wishlist-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 4 per row on large screens */
-  gap: 20px;
-  max-width: 1200px;
+/* CONTAINER & HEADER */
+.container {
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-/* ITEM STYLE */
-.item {
-  display: block;
-  border-radius: 12px;
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+header h1 {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+header p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* CATEGORY TABS */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 10px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: var(--card-bg);
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-subtle);
+}
+
+.tab-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.tab-btn.active {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* WISHLIST GRID */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.wishlist-grid.filtering {
+  opacity: 0.3;
+}
+
+/* WISHLIST CARD */
+.wishlist-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-subtle);
+  position: relative;
 }
 
-.item img {
+.wishlist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent-gold-light);
+}
+
+.card-image-wrapper {
   width: 100%;
-  height: 250px;
-  object-fit: cover; /* keeps images nicely cropped */
-  display: block;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  background-color: #FAF6F0;
 }
 
-/* Hover effect */
-.item:hover {
-  transform: scale(1.05);
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 📱 Tablet */
-@media (max-width: 900px) {
-  .wishlist-grid {
-    grid-template-columns: repeat(2, 1fr);
+.wishlist-card:hover .card-image-wrapper img {
+  transform: scale(1.06);
+}
+
+.card-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-brand {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 8px;
+}
+
+.card-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+  margin-top: auto;
+  transition: var(--transition-smooth);
+}
+
+.card-action .arrow {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-card:hover .card-action {
+  color: var(--accent-gold-dark);
+}
+
+.wishlist-card:hover .card-action .arrow {
+  transform: translateX(4px);
+}
+
+/* FADE-IN ANIMATION FOR ITEMS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* 📱 Phone */
-@media (max-width: 500px) {
+.wishlist-card {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Delay for staggered visual entry */
+.wishlist-card:nth-child(1) { animation-delay: 0.05s; }
+.wishlist-card:nth-child(2) { animation-delay: 0.1s; }
+.wishlist-card:nth-child(3) { animation-delay: 0.15s; }
+.wishlist-card:nth-child(4) { animation-delay: 0.2s; }
+.wishlist-card:nth-child(5) { animation-delay: 0.25s; }
+.wishlist-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 30px 16px 60px 16px;
+  }
+  header h1 {
+    font-size: 2.8rem;
+  }
+  .tabs-container {
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+  .tab-btn {
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+  .wishlist-grid {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  .card-image-wrapper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
   .wishlist-grid {
     grid-template-columns: 1fr;
   }
