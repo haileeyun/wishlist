@@ -179,9 +179,25 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = "wishlist-card";
       
       // Set inline animation delay for a staggered fade-in effect
-      card.style.animationDelay = `${index * 0.05}s`;
+      card.style.animationDelay = `${index * 0.04}s`;
+
+      // Get category codes
+      const categoryCodes = {
+        bags: "BG",
+        beauty: "BT",
+        clothing: "CL",
+        shoes: "SH",
+        accessories: "AC",
+        home: "HM"
+      };
+      const catCode = categoryCodes[item.category] || "XX";
+      const displayNum = String(index + 1).padStart(2, "0");
 
       card.innerHTML = `
+        <div class="card-meta">
+          <span class="item-num">N° ${displayNum}</span>
+          <span class="item-code">${catCode} / ${item.category.substring(0, 3).toUpperCase()}</span>
+        </div>
         <div class="card-image-wrapper">
           <img src="${item.image}" alt="${item.name}" loading="lazy">
         </div>
@@ -189,8 +205,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="card-brand">${item.brand}</span>
           <h3 class="card-name">${item.name}</h3>
           <div class="card-action">
-            <span>Shop Now</span>
-            <span class="arrow">→</span>
+            <span class="action-label">VIEW SPECIFICATION</span>
+            <span class="arrow">↗</span>
           </div>
         </div>
       `;

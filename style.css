@@ -1,20 +1,16 @@
 /* 
- * Hailee's Wishlist - Premium Style Sheets
- * A luxury fashion & lifestyle aesthetic.
+ * Hailee's Wishlist - Magazine Catalog Style
+ * A premium, modern lookbook aesthetic.
  */
 
 :root {
-  --bg-primary: #FAF7F2;
-  --text-primary: #2C2A29;
-  --text-secondary: #7A7875;
-  --accent-gold: #C5A079;
-  --accent-gold-dark: #A58059;
-  --accent-gold-light: #EADBC8;
-  --card-bg: #FFFFFF;
-  --card-border: #F0EDE8;
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.03);
-  --shadow-hover: 0 12px 30px rgba(197, 160, 121, 0.12);
-  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --bg-primary: #FAF9F5;      /* Editorial off-white paper */
+  --text-primary: #111111;    /* Deep ink black */
+  --text-secondary: #6A6A6A;  /* Muted editorial grey */
+  --accent-color: #8C7863;    /* Sophisticated bronze/gold */
+  --card-bg: #FFFFFF;         /* Flat white */
+  --card-border: #E3E1DA;     /* Muted border line */
+  --transition-editorial: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -29,48 +25,112 @@ body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  padding: 40px 20px 80px 20px;
-  line-height: 1.5;
+  padding: 60px 40px 100px 40px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* CONTAINER & HEADER */
+/* CONTAINER */
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
+/* MAGAZINE HEADER */
+.magazine-header {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-header h1 {
-  font-family: var(--font-serif);
-  font-size: 3.5rem;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-}
-
-header p {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
+.header-top, .header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--text-secondary);
-  font-weight: 400;
 }
 
-/* CATEGORY TABS */
+.header-bottom {
+  border-top: none; /* Just bottom border */
+}
+
+.logo-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.masthead {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.magazine-title {
+  font-family: var(--font-serif);
+  font-size: 6.5rem;
+  font-weight: 700;
+  letter-spacing: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  margin-right: -15px; /* Offset letter-spacing at end */
+}
+
+.subtitle-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title-decor-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--text-primary);
+  opacity: 0.3;
+}
+
+.magazine-subtitle {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* CATALOG NAVIGATION */
+.catalog-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.nav-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-primary);
+}
+
 .tabs-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 50px;
+  gap: 8px;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 20px;
 }
 
 .tab-btn {
@@ -78,36 +138,31 @@ header p {
   border: 1px solid var(--card-border);
   color: var(--text-secondary);
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 10px 24px;
-  border-radius: 40px;
+  letter-spacing: 1px;
+  padding: 8px 16px;
   cursor: pointer;
-  background-color: var(--card-bg);
-  transition: var(--transition-smooth);
-  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-editorial);
 }
 
 .tab-btn:hover {
-  border-color: var(--accent-gold);
+  border-color: var(--text-primary);
   color: var(--text-primary);
-  transform: translateY(-1px);
 }
 
 .tab-btn.active {
   background-color: var(--text-primary);
   border-color: var(--text-primary);
   color: #FFFFFF;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* WISHLIST GRID */
+/* WISHLIST GRID (Editorial smaller grid) */
 .wishlist-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -116,48 +171,79 @@ header p {
   opacity: 0.3;
 }
 
-/* WISHLIST CARD */
+/* WISHLIST CARD - Editorial Magazine Style */
 .wishlist-card {
   display: flex;
   flex-direction: column;
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 16px;
-  overflow: hidden;
   text-decoration: none;
   color: inherit;
-  transition: var(--transition-smooth);
-  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-editorial);
   position: relative;
 }
 
 .wishlist-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--accent-gold-light);
+  border-color: var(--text-primary);
+  transform: translateY(-4px);
 }
 
+/* Card Header (Meta Info) */
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--card-border);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: #FAF9F5;
+  transition: var(--transition-editorial);
+}
+
+.wishlist-card:hover .card-meta {
+  border-bottom-color: var(--text-primary);
+  background-color: #F0EDE5;
+}
+
+.item-num {
+  color: var(--text-primary);
+}
+
+.item-code {
+  color: var(--text-secondary);
+}
+
+/* Image */
 .card-image-wrapper {
   width: 100%;
-  height: 360px;
+  height: 280px;
   overflow: hidden;
   position: relative;
-  background-color: #FAF6F0;
+  background-color: #FAF9F5;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.wishlist-card:hover .card-image-wrapper {
+  border-bottom-color: var(--text-primary);
 }
 
 .card-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+  filter: grayscale(10%) contrast(98%);
 }
 
 .wishlist-card:hover .card-image-wrapper img {
-  transform: scale(1.06);
+  transform: scale(1.04);
+  filter: grayscale(0%) contrast(100%);
 }
 
+/* Info */
 .card-info {
-  padding: 24px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -165,53 +251,61 @@ header p {
 
 .card-brand {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--accent-gold);
-  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
 }
 
 .card-name {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.35;
-  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--text-secondary);
   margin-bottom: 16px;
   flex-grow: 1;
+  transition: var(--transition-editorial);
 }
 
+.wishlist-card:hover .card-name {
+  color: var(--text-primary);
+}
+
+/* Action link */
 .card-action {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  color: var(--text-primary);
-  margin-top: auto;
-  transition: var(--transition-smooth);
-}
-
-.card-action .arrow {
-  margin-left: 6px;
-  transition: transform 0.3s ease;
+  color: var(--text-secondary);
+  padding-top: 10px;
+  border-top: 1px dashed var(--card-border);
+  transition: var(--transition-editorial);
 }
 
 .wishlist-card:hover .card-action {
-  color: var(--accent-gold-dark);
+  color: var(--text-primary);
+  border-top-color: var(--text-primary);
 }
 
-.wishlist-card:hover .card-action .arrow {
-  transform: translateX(4px);
+.arrow {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wishlist-card:hover .arrow {
+  transform: translate(2px, -2px);
 }
 
 /* FADE-IN ANIMATION FOR ITEMS */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -220,47 +314,107 @@ header p {
 }
 
 .wishlist-card {
-  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
 }
 
-/* Delay for staggered visual entry */
-.wishlist-card:nth-child(1) { animation-delay: 0.05s; }
-.wishlist-card:nth-child(2) { animation-delay: 0.1s; }
-.wishlist-card:nth-child(3) { animation-delay: 0.15s; }
-.wishlist-card:nth-child(4) { animation-delay: 0.2s; }
-.wishlist-card:nth-child(5) { animation-delay: 0.25s; }
-.wishlist-card:nth-child(6) { animation-delay: 0.3s; }
+/* MAGAZINE FOOTER */
+.magazine-footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-/* 📱 Responsive Adjustments */
+.footer-line {
+  height: 1px;
+  background-color: var(--text-primary);
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.footer-content span:last-child {
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  body {
+    padding: 40px 24px 80px 24px;
+  }
+  .magazine-title {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 30px 16px 60px 16px;
   }
-  header h1 {
-    font-size: 2.8rem;
+  .magazine-title {
+    font-size: 3.8rem;
+    letter-spacing: 8px;
   }
-  .tabs-container {
-    gap: 8px;
-    margin-bottom: 35px;
-  }
-  .tab-btn {
-    padding: 8px 18px;
-    font-size: 0.8rem;
+  .header-top, .header-bottom {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
   }
   .wishlist-grid {
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
   }
   .card-image-wrapper {
-    height: 300px;
+    height: 230px;
+  }
+  .magazine-footer {
+    margin-top: 60px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.65rem;
   }
 }
 
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 2.4rem;
+  .magazine-title {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    margin-right: -4px;
+  }
+  .header-top, .header-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
   .wishlist-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .card-meta {
+    padding: 8px 10px;
+  }
+  .card-image-wrapper {
+    height: 180px;
+  }
+  .card-info {
+    padding: 12px 10px;
+  }
+  .card-brand {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+  .card-name {
+    font-size: 0.85rem;
   }
 }

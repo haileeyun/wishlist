@@ -15,24 +15,54 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Hailee's Wishlist</h1>
-      <p>Curated Collection</p>
+    <header class="magazine-header">
+      <div class="header-top">
+        <span class="meta-item">EDITION 1.0</span>
+        <span class="meta-item logo-sub">HAILEE'S PRIVATE ARCHIVE</span>
+        <span class="meta-item">ISSUE NO. 01</span>
+      </div>
+      
+      <div class="masthead">
+        <h1 class="magazine-title">DELUSION</h1>
+        <div class="subtitle-wrap">
+          <span class="title-decor-line"></span>
+          <p class="magazine-subtitle">Curated Wishlist & Catalog</p>
+          <span class="title-decor-line"></span>
+        </div>
+      </div>
+      
+      <div class="header-bottom">
+        <span class="meta-item">PERSONAL WISHLIST</span>
+        <span class="meta-item">VOL. 27</span>
+        <span class="meta-item">PAGE 01 — 99</span>
+      </div>
     </header>
 
-    <div class="tabs-container">
-      <button class="tab-btn active" data-category="all">All</button>
-      <button class="tab-btn" data-category="bags">Bags</button>
-      <button class="tab-btn" data-category="beauty">Beauty</button>
-      <button class="tab-btn" data-category="clothing">Clothing</button>
-      <button class="tab-btn" data-category="shoes">Shoes</button>
-      <button class="tab-btn" data-category="accessories">Accessories</button>
-      <button class="tab-btn" data-category="home">Home</button>
-    </div>
+    <nav class="catalog-nav">
+      <div class="nav-label">INDEX / SECTIONS:</div>
+      <div class="tabs-container">
+        <button class="tab-btn active" data-category="all">00. View All</button>
+        <button class="tab-btn" data-category="bags">01. Bags</button>
+        <button class="tab-btn" data-category="beauty">02. Beauty</button>
+        <button class="tab-btn" data-category="clothing">03. Clothing</button>
+        <button class="tab-btn" data-category="shoes">04. Shoes</button>
+        <button class="tab-btn" data-category="accessories">05. Accessories</button>
+        <button class="tab-btn" data-category="home">06. Home</button>
+      </div>
+    </nav>
 
-    <div class="wishlist-grid" id="wishlist-grid">
+    <main class="wishlist-grid" id="wishlist-grid">
       <!-- Items dynamically populated via script.js -->
-    </div>
+    </main>
+
+    <footer class="magazine-footer">
+      <span class="footer-line"></span>
+      <div class="footer-content">
+        <span>© 2026 HAILEE. ALL RIGHTS RESERVED.</span>
+        <span>INDEX / CODES / SPECIFICATIONS</span>
+        <span>BACK TO TOP ↑</span>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
