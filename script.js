@@ -19,7 +19,7 @@ const WISHLIST_ITEMS = [
     brand: "Chloé",
     name: "Paddington Shoulder Bag",
     image: "images/chloe_paddington_bag.png",
-    url: "https://www.chloe.com/en-us/p/bags/shoulder-bag/CH25WS802P75602.html",
+    url: "https://www.chloe.com/en-us/p/bags/shoulder-bag/CH25WS802P75001.html",
     category: "bags"
   },
   {
@@ -42,13 +42,6 @@ const WISHLIST_ITEMS = [
     image: "images/diptyque_candle.png",
     url: "https://www.diptyqueparis.com/en_us/p/home-fragrances/scented-candles/colored-scented-candles/roses-candle-600g.html",
     category: "home"
-  },
-  {
-    brand: "Ferragamo",
-    name: "Medium Leather Tote",
-    image: "images/ferragamo_bag.png",
-    url: "https://www.ferragamo.com/shop/us/en/women/handbags/totes-1/tote-m-777338",
-    category: "bags"
   },
   {
     brand: "Slip",
@@ -98,6 +91,69 @@ const WISHLIST_ITEMS = [
     image: "images/rene_caovilla_silver_heels.png",
     url: "https://us.renecaovilla.com/us/en/shoes/sandals/juniper-silver-468051817358015.html?keeplocale=true&Country=US&pid=468051817358015&utm_source=google&utm_medium=cpc&utm_campaign=US_Pmax&utm_id=21345453014&loopcd=COp|c|x|21345453014|468051817358015&gad_source=1&gad_campaignid=21349408318&gbraid=0AAAAACJVh3OX_UgvrRfYTC5R2oCuYnPea&gclid=Cj0KCQiAqeDMBhDcARIsAJEbU9TmQ8B9CBASMpx7i7QxqxKNTKG07hApi6w_Gt6iyue8IfeZPITwBzsaAgxwEALw_wcB",
     category: "shoes"
+  },
+  {
+    brand: "Isabel Marant",
+    name: "Bekett Sneakers",
+    image: "images/isabel_marant_sneakers.png",
+    url: "https://us.isabelmarant.com/products/bk0010faa1e19s01bk-bekett-sneakers-black?variant=48045244154175",
+    category: "shoes"
+  },
+  {
+    brand: "Louis Vuitton",
+    name: "Passport Cover",
+    image: "images/louis_vuitton_passport_cover.png",
+    url: "https://us.louisvuitton.com/eng-us/products/passport-cover-monogram-shadow-leather-nvprod5790139v/M13187",
+    category: "accessories"
+  },
+  {
+    brand: "Bulgari",
+    name: "Serpenti Tubogas Watch",
+    image: "images/bulgari_watch.png",
+    url: "https://www.bulgari.com/en-us/SP35C6SDS-2T-WG.html?pid=101910",
+    category: "accessories"
+  },
+  {
+    brand: "Loewe",
+    name: "Medium Featherlight Puzzle Bag",
+    image: "images/loewe_puzzle_bag.png",
+    url: "https://www.loewe.com/usa/en/women/bags/puzzle/medium-featherlight-puzzle-bag-in-nappa-lambskin/A510PLMX02-0018.html",
+    category: "bags"
+  },
+  {
+    brand: "Hermès",
+    name: "Birkin 30",
+    image: "images/black_birkin.png",
+    url: "https://www.therealreal.com/products/women/handbags/handle-bags/hermes-epsom-leather-birkin-30-ult22?utm_source=googleperformancemax&utm_medium=paidshopping&utm_campaign=Google%5FShopping%5FDemand%5FNew%5FWomens%5FHandbags%5FHerm%C3%A8s&utm_adgroup=&utm_content=&gad_source=1&gad_campaignid=22491516156&gbraid=0AAAAADh84nNQqVUEZP7V8EtRn_wX1C6f7&gclid=CjwKCAjwuuPRBhAnEiwA2Ji8evXQSbYnC_CNm3wOC9U7nwy89fxUBi7xxzQqasIqozcv831EqHTdBxoCORcQAvD_BwE",
+    category: "bags"
+  },
+  {
+    brand: "Jellycat",
+    name: "Amusables Clementine",
+    image: "images/jellycat_clementine.png",
+    url: "https://us.jellycat.com/amuseables-clementine/?_gl=1*aky461*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwuuPRBhAnEiwA2Ji8eukLERphrnNJy-HAbyJ1zNunKu8zLgH02dqZSkxduBXYzdzU4pnKlBoCmmwQAvD_BwE&gbraid=0AAAAADtxRQC-SGI9piKG5Tr1p9xjocMDy",
+    category: "home"
+  },
+  {
+    brand: "Jo Malone",
+    name: "English Pear & Freesia Body & Hand Lotion",
+    image: "images/jo_malone_lotion.png",
+    url: "https://www.jomalone.com/product/25956/27928/bath-body/english-pear-freesia-body-hand-lotion?size=250ml",
+    category: "beauty"
+  },
+  {
+    brand: "Dior",
+    name: "Dior Addict Lip Glow, Shade 077 Candy",
+    image: "images/dior_lip_glow.png",
+    url: "https://www.dior.com/en_us/beauty/products/dior-addict-lip-glow-Y0457000.html",
+    category: "beauty"
+  },
+  {
+    brand: "Rimowa",
+    name: "Original Cabin",
+    image: "images/rimowa_suitcase.png",
+    url: "https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92553004.html",
+    category: "bags"
   }
 ];
 
