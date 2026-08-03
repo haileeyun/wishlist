@@ -9,13 +9,6 @@ const WISHLIST_ITEMS = [
     category: "accessories"
   },
   {
-    brand: "Intimissimi",
-    name: "Silk Slip with Lace Insert",
-    image: "images/slip_dress.png",
-    url: "https://www.intimissimi.com/us/product/silk_slip_with_lace_insert_detail-LC71S1+++1467S.html?_gl=1*19q5pl*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwxb7RBhA5EiwAQ-AAdAL6tjpOWBFzhotgcF8OgseD99-4jmJmX4nOK2Z0GGmgnlhncQyI6RoC_9wQAvD_BwE&gbraid=0AAAAADtlepP_2xZgO5j8-KLRTDhJFOKLU",
-    category: "clothing"
-  },
-  {
     brand: "Chloé",
     name: "Paddington Shoulder Bag",
     image: "images/chloe_paddington_bag.png",
@@ -38,17 +31,10 @@ const WISHLIST_ITEMS = [
   },
   {
     brand: "Diptyque",
-    name: "Roses Scented Candle",
-    image: "images/diptyque_candle.png",
-    url: "https://www.diptyqueparis.com/en_us/p/home-fragrances/scented-candles/colored-scented-candles/roses-candle-600g.html",
+    name: "34 boulevard Saint Germain",
+    image: "images/diptyque_34_candle.png",
+    url: "https://us.diptyqueparis.com/en-us/products/large-candle-34-boulevard-saint-germain-34b600",
     category: "home"
-  },
-  {
-    brand: "Slip",
-    name: "White Queen Silk Pillowcase",
-    image: "images/slip_pillowcase.png",
-    url: "https://www.slip.com/collections/queen-pillowcases/products/pillowcase-white-queen-zippered",
-    category: "beauty"
   },
   {
     brand: "Amazon",
@@ -81,8 +67,8 @@ const WISHLIST_ITEMS = [
   {
     brand: "Tory Burch",
     name: "Romy Leather Tote",
-    image: "images/tory_burch_romy_tote.png",
-    url: "https://www.toryburch.com/en-us/handbags/tote-bags/romy-tote/163388.html?color=200",
+    image: "images/romy_tote.png",
+    url: "https://www.toryburch.com/en-us/handbags/tote-bags/romy-tote/163388.html?color=001",
     category: "bags"
   },
   {
@@ -135,10 +121,38 @@ const WISHLIST_ITEMS = [
     category: "home"
   },
   {
-    brand: "Jo Malone",
-    name: "English Pear & Freesia Body & Hand Lotion",
-    image: "images/jo_malone_lotion.png",
-    url: "https://www.jomalone.com/product/25956/27928/bath-body/english-pear-freesia-body-hand-lotion?size=250ml",
+    brand: "Diptyque",
+    name: "Lunamaris Eau de Parfum",
+    image: "images/lunamaris.png",
+    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-lunamaris-lunamar100?_gl=1*6z55e6*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwvZHTBhAlEiwA1ug5P8h7dEIMpFxJ386y_tpdwafuIImTRnalIHtjN9M19h_37liVGUJ2XRoChGMQAvD_BwE&gbraid=0AAAAAD05AonQ7Jx85-a0Y8GZHv_1QmhmD",
+    category: "beauty"
+  },
+  {
+    brand: "Diptyque",
+    name: "Eau Rihla Eau de Parfum",
+    image: "images/eau_rihla.png",
+    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-eau-rihla-meastp75c",
+    category: "beauty"
+  },
+  {
+    brand: "Diptyque",
+    name: "Eau Duelle Eau de Parfum",
+    image: "images/eau_duelle.png",
+    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-eau-duelle-duellep75cv1",
+    category: "beauty"
+  },
+  {
+    brand: "Diptyque",
+    name: "Tempo Eau de Parfum",
+    image: "images/tempo.png",
+    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-tempo-tempop75cv1",
+    category: "beauty"
+  },
+  {
+    brand: "Diptyque",
+    name: "Eau Rihla Hair Mist",
+    image: "images/eau_rihla_hair_mist.png",
+    url: "https://us.diptyqueparis.com/en-us/products/hair-mist-eau-rihla-hmistrihla",
     category: "beauty"
   },
   {
@@ -154,7 +168,71 @@ const WISHLIST_ITEMS = [
     image: "images/rimowa_suitcase.png",
     url: "https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92553004.html",
     category: "bags"
-  }
+  },
+  {
+    brand: "Mulberry",
+    name: "Bayswater Bag",
+    image: "images/mulberry_bayswater_bag.png",
+    url: "https://www.mulberry.com/us/shop/women/bags/bayswater-ebony-heavy-grain?gad_source=1&gad_campaignid=22804137551&gclid=CjwKCAjw1bvTBhBbEiwAzbP8L6NYkQim0robx20d7VFEnAqn5G_05VI7BmhdfduIoWzESckjhJzMJxoCSY4QAvD_BwE",
+    category: "bags"
+  },
+  {
+    brand: "Ticktype",
+    name: "DP104 Keyboard with Cloud Silent Switches",
+    image: "images/ticktype_keyboard.png",
+    url: "https://www.ticktype.com/products/dp-104?variant=47891556434078",
+    category: "home"
+  },
+  {
+    brand: "Philips",
+    name: "Philips Sonicare Prestige 9900",
+    image: "images/toothbrush.png",
+    url: "https://www.usa.philips.com/c-p/HX9990_12/sonicare-9900-prestige-power-toothbrush-with-senseiq",
+    category: "beauty"
+  },
+  {
+    brand: "Christian Louboutin",
+    name: "Kate 85mm Patent Leather Pumps",
+    image: "images/louboutin_kate.png",
+    url: "https://us.christianlouboutin.com/us_en/kate-black-3191416bk01.html",
+    category: "shoes"
+  },
+  {
+    brand: "Givenchy",
+    name: "Shark Pinch Boots in Leather",
+    image: "images/givenchy_boots.png",
+    url: "https://www.givenchy.com/us/en-US/shark-pinch-boots-in-leather/BE703XE1J7-001.html",
+    category: "shoes"
+  },
+  {
+    brand: "Diptyque",
+    name: "Matchbox",
+    image: "images/diptyque_matchbox.png",
+    url: "https://us.diptyqueparis.com/en-us/products/boscage-matchbox-deco01654",
+    category: "home"
+  },
+  {
+    brand: "Diptyque",
+    name: "Engraved Sleeve",
+    image: "images/diptyque_matchbox_sleeve.png",
+    url: "https://us.diptyqueparis.com/en-us/products/for-matchbox-basile-engraved-sleeve-deco01439",
+    category: "home"
+  },
+  {
+    brand: "Aesop",
+    name: "Reverence Aromatique Hand Wash",
+    image: "images/aesop_soap.png",
+    url: "https://www.aesop.com/hand-body/hand-washes-balms/reverence-aromatique-hand-wash/BT17.html",
+    category: "home"
+  },
+  {
+    brand: "Slip",
+    name: "White Queen Silk Pillowcase",
+    image: "images/slip_pillowcase.png",
+    url: "https://www.slip.com/collections/queen-pillowcases/products/pillowcase-white-queen-zippered",
+    category: "home"
+  },
+
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
