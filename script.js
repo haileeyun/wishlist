@@ -221,7 +221,7 @@ const WISHLIST_ITEMS = [
   {
     brand: "Bottega Veneta",
     name: "Small Andiamo",
-    image: "images/bottega_andiamo.png",
+    image: "images/andiamo.png",
     url: "https://www.bottegaveneta.com/en-us/small-andiamo-sea-salt-766014VCPP19211.html",
     category: "bags"
   },
