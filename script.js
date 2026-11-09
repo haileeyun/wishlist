@@ -115,9 +115,9 @@ const WISHLIST_ITEMS = [
   },
   {
     brand: "Jellycat",
-    name: "Amusables Clementine",
-    image: "images/jellycat_clementine.png",
-    url: "https://us.jellycat.com/amuseables-clementine/?_gl=1*aky461*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwuuPRBhAnEiwA2Ji8eukLERphrnNJy-HAbyJ1zNunKu8zLgH02dqZSkxduBXYzdzU4pnKlBoCmmwQAvD_BwE&gbraid=0AAAAADtxRQC-SGI9piKG5Tr1p9xjocMDy",
+    name: "Strutton Pigeon",
+    image: "images/pigeon_jellycat.png",
+    url: "https://us.jellycat.com/strutton-pigeon/?_gl=1*dqgjmk*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-8nsmD9qaBiDkWOgz-goVWfsAEbahheZt4VjZt1hvKMp101QS9gdgRoCszEQAvD_BwE&gbraid=0AAAAADtxRQDqepzSHFhufrVjMmR4CZcC1",
     category: "home"
   },
   {
@@ -129,13 +129,6 @@ const WISHLIST_ITEMS = [
   },
   {
     brand: "Diptyque",
-    name: "Eau Rihla Eau de Parfum",
-    image: "images/eau_rihla.png",
-    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-eau-rihla-meastp75c",
-    category: "beauty"
-  },
-  {
-    brand: "Diptyque",
     name: "Eau Duelle Eau de Parfum",
     image: "images/eau_duelle.png",
     url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-eau-duelle-duellep75cv1",
@@ -143,18 +136,11 @@ const WISHLIST_ITEMS = [
   },
   {
     brand: "Diptyque",
-    name: "Tempo Eau de Parfum",
-    image: "images/tempo.png",
-    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-tempo-tempop75cv1",
+    name: "Lilyphea",
+    image: "images/lilyphea.png",
+    url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-lilyphea-lilyphea100?utm_campaign=%5BUS%5D%5BPMAX%5D_dip_usa_gg_en_all-products_lux__pur__conv_mix_pmax-r__lab__ecom___&utm_source=google&utm_medium=cpc&wiz_campaign=19684070376&wiz_target=%7Badgroup%7D&wiz_message=&gad_source=1&gad_campaignid=19684071084&gbraid=0AAAAAD05Aolzvev7ley5pXN0KKSF2LHfz&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-_RszYHFdide5OgxiNJeC7uYkjtx4UDm1iq64ikEX-HGQ0EYpn1_GxoCzyYQAvD_BwE&oc=US#_mak_tx1=&_mak_tx1=",
     category: "beauty"
-  },
-  {
-    brand: "Diptyque",
-    name: "Eau Rihla Hair Mist",
-    image: "images/eau_rihla_hair_mist.png",
-    url: "https://us.diptyqueparis.com/en-us/products/hair-mist-eau-rihla-hmistrihla",
-    category: "beauty"
-  },
+  }
   {
     brand: "Dior",
     name: "Dior Addict Lip Glow, Shade 077 Candy",
@@ -232,6 +218,27 @@ const WISHLIST_ITEMS = [
     url: "https://www.slip.com/collections/queen-pillowcases/products/pillowcase-white-queen-zippered",
     category: "home"
   },
+  {
+    brand: "Bottega Veneta",
+    name: "Small Andiamo",
+    image: "images/bottega_andiamo.png",
+    url: "https://www.bottegaveneta.com/en-us/small-andiamo-sea-salt-766014VCPP19211.html",
+    category: "bags"
+  },
+  {
+    brand: "Le Labo",
+    name: "Another 13 Eau de Parfum",
+    image: "images/another_13.png",
+    url: "https://www.lelabofragrances.com/another-13-463.html?srsltid=AYCX9vIHS4iaU8NIXEEo3FDIH2KQXbCPCQcpsFNRZwPrH2luXL1lBhJU&size=100ml",
+    category: "beauty"
+  },
+  {
+    brand: "Diptyque",
+    name: "Comforting Moisturizing Lotion",
+    image: "images/diptyque_lotion.png",
+    url: "https://us.diptyqueparis.com/en-us/products/body-care-comforting-moisturising-lotion-bainmilk?_gl=1*1yhsieu*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-_RszYHFdide5OgxiNJeC7uYkjtx4UDm1iq64ikEX-HGQ0EYpn1_GxoCzyYQAvD_BwE&gbraid=0AAAAAD05Aolzvev7ley5pXN0KKSF2LHfz",
+    category: "beauty"
+  }
 
 ];
 
