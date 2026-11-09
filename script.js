@@ -140,7 +140,7 @@ const WISHLIST_ITEMS = [
     image: "images/lilyphea.png",
     url: "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-lilyphea-lilyphea100?utm_campaign=%5BUS%5D%5BPMAX%5D_dip_usa_gg_en_all-products_lux__pur__conv_mix_pmax-r__lab__ecom___&utm_source=google&utm_medium=cpc&wiz_campaign=19684070376&wiz_target=%7Badgroup%7D&wiz_message=&gad_source=1&gad_campaignid=19684071084&gbraid=0AAAAAD05Aolzvev7ley5pXN0KKSF2LHfz&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-_RszYHFdide5OgxiNJeC7uYkjtx4UDm1iq64ikEX-HGQ0EYpn1_GxoCzyYQAvD_BwE&oc=US#_mak_tx1=&_mak_tx1=",
     category: "beauty"
-  }
+  },
   {
     brand: "Dior",
     name: "Dior Addict Lip Glow, Shade 077 Candy",
@@ -238,7 +238,7 @@ const WISHLIST_ITEMS = [
     image: "images/diptyque_lotion.png",
     url: "https://us.diptyqueparis.com/en-us/products/body-care-comforting-moisturising-lotion-bainmilk?_gl=1*1yhsieu*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-_RszYHFdide5OgxiNJeC7uYkjtx4UDm1iq64ikEX-HGQ0EYpn1_GxoCzyYQAvD_BwE&gbraid=0AAAAAD05Aolzvev7ley5pXN0KKSF2LHfz",
     category: "beauty"
-  }
+  },
 
 ];
 
