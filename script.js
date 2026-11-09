@@ -239,6 +239,13 @@ const WISHLIST_ITEMS = [
     url: "https://us.diptyqueparis.com/en-us/products/body-care-comforting-moisturising-lotion-bainmilk?_gl=1*1yhsieu*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA2MDXBhBUEiwAD-YB-_RszYHFdide5OgxiNJeC7uYkjtx4UDm1iq64ikEX-HGQ0EYpn1_GxoCzyYQAvD_BwE&gbraid=0AAAAAD05Aolzvev7ley5pXN0KKSF2LHfz",
     category: "beauty"
   },
+  {
+    brand: "Dior",
+    name: "Mini Lady Dior Bag with Chain",
+    image: "images/mini_lady_dior.png",
+    url: "https://www.dior.com/en_us/fashion/products/M0505PUQC_M06E",
+    category: "bags"
+  }
 
 ];
 
